@@ -47,8 +47,6 @@ A primeira parte é proteger a página de configuração do roteador, evitando q
 | Senha de administração | Substituição da senha padrão |
 | Gerenciamento remoto | Desativação do acesso pela Internet |
 
-![Tela de administração do roteador](administracao-roteador.png)
-
 ---
 
 ### 2. Rede WiFi principal: HomeNet
@@ -65,10 +63,6 @@ A rede principal foi usada para estudar a configuração do nome da rede (SSID) 
 
 **SSID** é o nome que aparece na lista de redes Wireless. **WPA2 Personal** é o tipo de proteção usado na conexão, e **AES** é o método que ajuda a proteger os dados transmitidos.
 
-![Configuração do nome da rede](ssid-homenet.png)
-
-![Configuração da segurança Wi-Fi](seguranca-wifi.png)
-
 ---
 
 ### 3. Rede de convidados: GuestNet
@@ -83,8 +77,6 @@ A GuestNet permite oferecer WiFi a visitantes sem liberar o acesso aos dispositi
 | Criptografia | AES |
 | Acesso à rede local | Bloqueado para convidados |
 
-![Configuração da rede de convidados](rede-convidados.png)
-
 ---
 
 ### 4. Computadores e dispositivos inteligentes
@@ -94,11 +86,11 @@ Os dispositivos precisam usar a rede e a senha corretas. O exercício também ut
 | Dispositivo | Rede ou conexão | Configuração abordada |
 |---|---|---|
 | Home Office PC | Cabo de rede | DHCP e acesso à página do roteador |
-| Home Laptop 1 | HomeNet | Conexão Wi-Fi com WPA2 Personal |
+| Home Laptop 1 | HomeNet | Conexão Wireless com WPA2 Personal |
 | Home Laptop 2 | GuestNet | Conexão à rede de convidados |
 | Home_Webcam | HomeNet | WPA2-PSK, AES e DHCP |
-| Home_Siren | HomeNet | Configuração de Wi-Fi e DHCP |
-| Home Door | HomeNet | Configuração de Wi-Fi e DHCP |
+| Home_Siren | HomeNet | Configuração de Wireless e DHCP |
+| Home Door | HomeNet | Configuração de Wireless e DHCP |
 
 #### Endereçamento de referência
 
@@ -107,12 +99,6 @@ Os dispositivos precisam usar a rede e a senha corretas. O exercício também ut
 | Rede local | `192.168.0.0/24` |
 | Roteador / gateway | `192.168.0.1` |
 | Máscara de rede | `255.255.255.0` |
-
-![Configuração de DHCP no PC](dhcp-pc.png)
-
-![Conexão Wi-Fi do notebook](conexao-notebook.png)
-
-![Configuração da webcam](webcam-iot.png)
 
 ---
 
