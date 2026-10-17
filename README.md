@@ -6,6 +6,8 @@ Com Cisco Packet Tracer a atividade mostra como proteger o acesso ao roteador, c
 
 As capturas de tela foram incluídas apenas para ilustrar as etapas em um ambiente simulado. As senhas mostradas nas telas pertencem ao exercício.
 
+---
+
 ## O que pratiquei
 
 - Trocar a senha padrão de administração do roteador.
@@ -15,6 +17,8 @@ As capturas de tela foram incluídas apenas para ilustrar as etapas em um ambien
 - Conectar notebooks e dispositivos inteligentes à rede.
 - Usar **DHCP** para receber endereços IP automaticamente.
 - Separar a rede de convidados da rede principal.
+
+---
 
 ## Ferramenta e cenário
 
@@ -27,6 +31,13 @@ As capturas de tela foram incluídas apenas para ilustrar as etapas em um ambien
 | Dispositivos do exercício | PC, notebooks, webcam, sirene e porta inteligente |
 | Conexão externa | ISP/Telco e Data Center no cenário do curso |
 
+---
+
+### Topologia
+
+![Cenário físico do Packet Tracer](visao-fisica.png)
+
+---
 
 ## Configurações do laboratório
 
@@ -41,6 +52,8 @@ A primeira parte é proteger a página de configuração do roteador, evitando q
 | Gerenciamento remoto | Desativação do acesso pela Internet |
 
 ![Tela de administração do roteador](administracao-roteador.png)
+
+---
 
 ### 2. Rede WiFi principal: HomeNet
 
@@ -60,6 +73,8 @@ A rede principal foi usada para estudar a configuração do nome da rede (SSID) 
 
 ![Configuração da segurança Wi-Fi](seguranca-wifi.png)
 
+---
+
 ### 3. Rede de convidados: GuestNet
 
 A GuestNet permite oferecer WiFi a visitantes sem liberar o acesso aos dispositivos da rede principal.
@@ -73,6 +88,8 @@ A GuestNet permite oferecer WiFi a visitantes sem liberar o acesso aos dispositi
 | Acesso à rede local | Bloqueado para convidados |
 
 ![Configuração da rede de convidados](rede-convidados.png)
+
+---
 
 ### 4. Computadores e dispositivos inteligentes
 
@@ -101,6 +118,8 @@ Os dispositivos precisam usar a rede e a senha corretas. O exercício também ut
 
 ![Configuração da webcam](webcam-iot.png)
 
+---
+
 ## Passo a passo resumido
 
 1. Acessar o roteador pelo navegador do PC.
@@ -112,6 +131,8 @@ Os dispositivos precisam usar a rede e a senha corretas. O exercício também ut
 7. Conectar os notebooks e dispositivos inteligentes às redes correspondentes.
 8. Conferir os endereços recebidos por DHCP e testar a conexão.
 9. Testar a separação entre GuestNet e HomeNet com o comando `ping`.
+
+---
 
 ## Fluxograma do processo
 
@@ -137,6 +158,8 @@ flowchart TD
 | Acesso ao site de teste | Conferir a comunicação com a rede externa simulada |
 | `ping` entre redes | Entender se um convidado consegue acessar um dispositivo da rede principal |
 | Novo `ping` após o isolamento | Conferir o bloqueio da comunicação entre as redes |
+
+---
 
 ## O que aprendi
 
