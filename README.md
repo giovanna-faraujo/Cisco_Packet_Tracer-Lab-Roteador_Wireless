@@ -6,9 +6,6 @@ Com Cisco Packet Tracer a atividade mostra como proteger o acesso ao roteador, c
 
 As capturas de tela foram incluídas apenas para ilustrar as etapas em um ambiente simulado. As senhas mostradas nas telas pertencem ao exercício.
 
-![Cenário físico do Packet Tracer](visao-fisica.png)
-
----
 ![Cenário casa](ambiente-domestico.png)
 ---
 
