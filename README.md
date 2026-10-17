@@ -1,19 +1,17 @@
-# Segurança de roteador Wi-Fi com Cisco Packet Tracer
+# Laboratório da **Cisco Networking Academy: Segurança de roteador Wi-Fi com Cisco Packet Tracer
 
 ## Sobre o laboratório
 
-Neste laboratório da **Cisco Networking Academy (NetAcad)**, pratiquei configurações para deixar uma rede Wi-Fi doméstica mais segura usando o **Cisco Packet Tracer**.
-
 A atividade mostra como proteger o acesso ao roteador, configurar redes para moradores e convidados e conectar computadores e dispositivos inteligentes. Também aborda como conferir se a rede está funcionando e se os convidados estão separados da rede principal.
 
-> **Origem:** atividade educacional **“PT Packet Tracer - Configurar o fortalecimento e a segurança do roteador sem fio”**, disponibilizada pela Cisco Networking Academy. O cenário foi fornecido pelo curso; esta documentação é um resumo próprio do que foi estudado.
+As capturas de tela foram incluídas apenas para ilustrar as etapas do roteiro em um ambiente simulado. As senhas mostradas nas telas pertencem ao exercício.
 
 ## O que pratiquei
 
 - Trocar a senha padrão de administração do roteador.
 - Desativar o gerenciamento remoto quando ele não for necessário.
 - Configurar a rede principal **HomeNet** e a rede de convidados **GuestNet**.
-- Proteger as redes Wi-Fi com **WPA2 Personal** e **AES**.
+- Proteger as redes WiFi com **WPA2 Personal** e **AES**.
 - Conectar notebooks e dispositivos inteligentes à rede.
 - Usar **DHCP** para receber endereços IP automaticamente.
 - Separar a rede de convidados da rede principal.
@@ -33,7 +31,7 @@ A atividade mostra como proteger o acesso ao roteador, configurar redes para mor
 
 ![Topologia ilustrativa da rede](topologia-ilustrativa.png)
 
-*Ilustração didática criada para acompanhar a documentação do laboratório da NetAcad. Não é uma reprodução da topologia oficial.*
+*Ilustração criada para acompanhar a documentação do laboratório. Não é a topologia oficial.*
 
 ![Cenário físico do Packet Tracer](visao-fisica.png)
 
@@ -51,7 +49,7 @@ A primeira parte é proteger a página de configuração do roteador, evitando q
 
 ![Tela de administração do roteador](administracao-roteador.png)
 
-### 2. Rede Wi-Fi principal: HomeNet
+### 2. Rede WiFi principal: HomeNet
 
 A rede principal foi usada para estudar a configuração do nome da rede (SSID) e a proteção das conexões sem fio.
 
@@ -71,7 +69,7 @@ A rede principal foi usada para estudar a configuração do nome da rede (SSID) 
 
 ### 3. Rede de convidados: GuestNet
 
-A GuestNet permite oferecer Wi-Fi a visitantes sem liberar o acesso aos dispositivos da rede principal.
+A GuestNet permite oferecer WiFi a visitantes sem liberar o acesso aos dispositivos da rede principal.
 
 | Parâmetro | Configuração do exercício |
 |---|---|
@@ -141,7 +139,7 @@ flowchart TD
 
 | Teste | Para que serve |
 |---|---|
-| Conexão Wi-Fi | Conferir se o dispositivo consegue entrar na rede escolhida |
+| Conexão WiFi | Conferir se o dispositivo consegue entrar na rede escolhida |
 | Endereço IP via DHCP | Conferir se o equipamento recebe um endereço automaticamente |
 | Acesso ao site de teste | Conferir a comunicação com a rede externa simulada |
 | `ping` entre redes | Entender se um convidado consegue acessar um dispositivo da rede principal |
@@ -149,12 +147,6 @@ flowchart TD
 
 ## O que aprendi
 
-Este laboratório ajudou a entender que a segurança de uma rede começa com configurações simples, como trocar senhas padrão, proteger o Wi-Fi e limitar acessos desnecessários.
+Este laboratório ajudou a entender que a segurança de uma rede começa com configurações simples, como trocar senhas padrão, proteger o W-Fi e limitar acessos desnecessários.
 
 Também reforçou a diferença entre a rede principal e a rede de convidados, além da função do DHCP na conexão dos equipamentos. Esses conhecimentos são úteis em **Suporte de TI, Redes e Cybersecurity**, especialmente para configurar redes e investigar problemas de conectividade.
-
-## Referência
-
-- **Cisco Networking Academy (NetAcad):** atividade *PT Packet Tracer - Configurar o fortalecimento e a segurança do roteador sem fio*.
-
-As capturas de tela foram incluídas apenas para ilustrar as etapas do roteiro em um ambiente simulado. As senhas mostradas nas telas pertencem ao exercício educacional.
