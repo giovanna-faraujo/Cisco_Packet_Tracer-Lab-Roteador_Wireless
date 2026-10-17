@@ -27,13 +27,6 @@ As capturas de tela foram incluídas apenas para ilustrar as etapas em um ambien
 | Dispositivos do exercício | PC, notebooks, webcam, sirene e porta inteligente |
 | Conexão externa | ISP/Telco e Data Center no cenário do curso |
 
-### Topologia ilustrativa
-
-![Topologia ilustrativa da rede](topologia-ilustrativa.png)
-
-*Ilustração criada para acompanhar a documentação do laboratório. Não é a topologia oficial.*
-
-![Cenário físico do Packet Tracer](visao-fisica.png)
 
 ## Configurações do laboratório
 
