@@ -9,6 +9,8 @@ As capturas de tela foram incluídas apenas para ilustrar as etapas em um ambien
 ![Cenário físico do Packet Tracer](visao-fisica.png)
 
 ---
+![Cenário casa](ambiente-domestico.png)
+---
 
 ## O que pratiquei
 
