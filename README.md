@@ -1,10 +1,10 @@
-# Laboratório da Cisco Networking Academy: Segurança de roteador Wi-Fi com Cisco Packet Tracer
+# Laboratório Cisco Networking Academy: Segurança de roteador WiFi
 
 ## Sobre o laboratório
 
-A atividade mostra como proteger o acesso ao roteador, configurar redes para moradores e convidados e conectar computadores e dispositivos inteligentes. Também aborda como conferir se a rede está funcionando e se os convidados estão separados da rede principal.
+Com Cisco Packet Tracer a atividade mostra como proteger o acesso ao roteador, configurar redes para moradores e convidados e conectar computadores e dispositivos inteligentes. Também aborda como conferir se a rede está funcionando e se os convidados estão separados da rede principal.
 
-As capturas de tela foram incluídas apenas para ilustrar as etapas do roteiro em um ambiente simulado. As senhas mostradas nas telas pertencem ao exercício.
+As capturas de tela foram incluídas apenas para ilustrar as etapas em um ambiente simulado. As senhas mostradas nas telas pertencem ao exercício.
 
 ## O que pratiquei
 
