@@ -1,130 +1,160 @@
-# Laboratório Cisco Networking Academy: Fortalecimento e segurança de roteador sem fio
+# Segurança de roteador Wi-Fi com Cisco Packet Tracer
 
-## Visão geral
+## Sobre o laboratório
 
-Utilizei o Cisco Packet Tracer para trabalhar com configurações de proteção de uma rede doméstica. A atividade aborda a senha administrativa do roteador, a segurança das redes WiFi, a conexão de clientes e dispositivos IoT e o isolamento da rede de convidados.
+Neste laboratório da **Cisco Networking Academy (NetAcad)**, pratiquei configurações para deixar uma rede Wi-Fi doméstica mais segura usando o **Cisco Packet Tracer**.
 
-O objetivo é entender como configurações simples podem reduzir riscos de acesso indevido e como verificar a conectividade depois de aplicar mudanças.
+A atividade mostra como proteger o acesso ao roteador, configurar redes para moradores e convidados e conectar computadores e dispositivos inteligentes. Também aborda como conferir se a rede está funcionando e se os convidados estão separados da rede principal.
 
-## Objetivos de aprendizagem
+> **Origem:** atividade educacional **“PT Packet Tracer - Configurar o fortalecimento e a segurança do roteador sem fio”**, disponibilizada pela Cisco Networking Academy. O cenário foi fornecido pelo curso; esta documentação é um resumo próprio do que foi estudado.
 
-- Entender por que é importante alterar a senha padrão do roteador e restringir o gerenciamento remoto.
-- Configurar identificação e proteção das redes sem fio com WPA2 Personal e AES.
-- Conectar notebooks e dispositivos IoT à rede correta.
-- Verificar endereçamento automático via DHCP.
-- Compreender o isolamento entre a rede principal e a rede de convidados.
+## O que pratiquei
 
-## Topologia ilustrativa
+- Trocar a senha padrão de administração do roteador.
+- Desativar o gerenciamento remoto quando ele não for necessário.
+- Configurar a rede principal **HomeNet** e a rede de convidados **GuestNet**.
+- Proteger as redes Wi-Fi com **WPA2 Personal** e **AES**.
+- Conectar notebooks e dispositivos inteligentes à rede.
+- Usar **DHCP** para receber endereços IP automaticamente.
+- Separar a rede de convidados da rede principal.
 
-![Topologia ilustrativa parcial do laboratório](assets/topologia-ilustrativa.png)
+## Ferramenta e cenário
 
-*Topologia ilustrativa elaborada para documentar o laboratório realizado na Cisco Networking Academy. A representação é parcial e didática: as capturas não comprovam as portas físicas ou todos os enlaces entre dispositivos.*
-
-O cenário físico também inclui ambientes residenciais e um caminho externo representado por ISP/Telco e Data Center. Outros dispositivos mencionados no exercício, como Home_Siren e Home Door, não possuem configuração comprovada nas capturas enviadas.
-
-![Visão física do cenário](assets/evidencias/visao-fisica.png)
-
-## Configurações identificadas
-
-### Endereçamento
-
-| Dispositivo | Interface | IP | Máscara | Gateway | DNS |
-|---|---|---|---|---|---|
-| Roteador sem fio | Interface de gerenciamento | 192.168.0.1 | Não verificada | Não se aplica | Não verificado |
-| Home Office PC | FastEthernet0 | 192.168.0.100 | 255.255.255.0 | 192.168.0.1 | 10.2.0.125 |
-| Home_Webcam | Wireless0 | 192.168.0.106 | 255.255.255.0 | Não verificado | Não verificado |
-| Home Laptop 1 | Adaptador Wireless-N | Não verificado | Não verificada | Não verificado | Não verificado |
-| Home Laptop 2 | Não verificada | Não verificado | Não verificada | Não verificado | Não verificado |
-
-O PC e a webcam aparecem com DHCP selecionado. Os endereços são do ambiente simulado.
-
-### Roteador: redes Wi-Fi
-
-| Parâmetro | HomeNet | GuestNet |
-|---|---|---|
-| Finalidade | Rede principal | Rede de convidados |
-| Faixas | 2,4 GHz; 5 GHz-1; 5 GHz-2 | Perfis de 2,4 GHz e 5 GHz exibidos |
-| Transmissão do SSID | Habilitada nas três faixas | Habilitada nas faixas visíveis |
-| Segurança | WPA2 Personal | WPA2 Personal |
-| Criptografia | AES | AES |
-| Senha pré-compartilhada | Configurada na simulação | Configurada na simulação |
-| Acesso à rede local | Rede principal | Caixa de acesso à rede local desmarcada na captura |
-
-
-### Administração do roteador
-
-| Parâmetro | Evidência |
+| Item | Descrição |
 |---|---|
-| Acesso à interface web | 192.168.0.1 |
-| Senha administrativa | Campos preenchidos e mascarados na captura |
-| Gerenciamento remoto | **Enabled** selecionado na captura enviada |
-| Porta de gerenciamento remoto | 8080 |
-| Desativação efetiva do gerenciamento remoto | Comprovada |
+| Plataforma | Cisco Networking Academy (NetAcad) |
+| Simulador | Cisco Packet Tracer |
+| Equipamento central | Roteador sem fio doméstico |
+| Redes Wi-Fi | HomeNet (principal) e GuestNet (convidados) |
+| Dispositivos do exercício | PC, notebooks, webcam, sirene e porta inteligente |
+| Conexão externa | ISP/Telco e Data Center no cenário do curso |
 
+### Topologia ilustrativa
 
-### Clientes sem fio e IoT
+![Topologia ilustrativa da rede](topologia-ilustrativa.png)
 
-| Dispositivo | Configuração observada | Resultado visível |
+*Ilustração didática criada para acompanhar a documentação do laboratório da NetAcad. Não é uma reprodução da topologia oficial.*
+
+![Cenário físico do Packet Tracer](visao-fisica.png)
+
+## Configurações do laboratório
+
+### 1. Administração do roteador
+
+A primeira parte é proteger a página de configuração do roteador, evitando que qualquer pessoa com a senha padrão possa alterar a rede.
+
+| Configuração | O que foi trabalhado |
+|---|---|
+| Endereço do roteador | `192.168.0.1` |
+| Senha de administração | Substituição da senha padrão |
+| Gerenciamento remoto | Desativação do acesso pela Internet |
+
+![Tela de administração do roteador](administracao-roteador.png)
+
+### 2. Rede Wi-Fi principal: HomeNet
+
+A rede principal foi usada para estudar a configuração do nome da rede (SSID) e a proteção das conexões sem fio.
+
+| Parâmetro | Configuração do exercício |
+|---|---|
+| SSID | `HomeNet` |
+| Frequências | 2,4 GHz, 5 GHz-1 e 5 GHz-2 |
+| Divulgação do nome da rede | Habilitada |
+| Segurança | WPA2 Personal |
+| Criptografia | AES |
+
+**SSID** é o nome que aparece na lista de redes Wi-Fi. **WPA2 Personal** é o tipo de proteção usado na conexão, e **AES** é o método que ajuda a proteger os dados transmitidos.
+
+![Configuração do nome da rede](ssid-homenet.png)
+
+![Configuração da segurança Wi-Fi](seguranca-wifi.png)
+
+### 3. Rede de convidados: GuestNet
+
+A GuestNet permite oferecer Wi-Fi a visitantes sem liberar o acesso aos dispositivos da rede principal.
+
+| Parâmetro | Configuração do exercício |
+|---|---|
+| SSID | `GuestNet` |
+| Perfil de convidados | Habilitado nas três faixas |
+| Segurança | WPA2 Personal |
+| Criptografia | AES |
+| Acesso à rede local | Bloqueado para convidados |
+
+![Configuração da rede de convidados](rede-convidados.png)
+
+### 4. Computadores e dispositivos inteligentes
+
+Os dispositivos precisam usar a rede e a senha corretas. O exercício também utiliza DHCP, que entrega automaticamente um endereço IP aos equipamentos.
+
+| Dispositivo | Rede ou conexão | Configuração abordada |
 |---|---|---|
-| Home Laptop 1 | Adaptador Wireless-N, conexão ao ponto de acesso | Mensagem de conexão bem-sucedida |
-| Home Laptop 2 | GuestNet prevista no roteiro | Sem captura individual de validação |
-| Home_Webcam | SSID HomeNet, WPA2-PSK, AES, DHCP | IP 192.168.0.106 atribuído |
-| Home_Siren | Configuração prevista no roteiro | Não verificada |
-| Home Door | Configuração prevista no roteiro | Não verificada |
+| Home Office PC | Cabo de rede | DHCP e acesso à página do roteador |
+| Home Laptop 1 | HomeNet | Conexão Wi-Fi com WPA2 Personal |
+| Home Laptop 2 | GuestNet | Conexão à rede de convidados |
+| Home_Webcam | HomeNet | WPA2-PSK, AES e DHCP |
+| Home_Siren | HomeNet | Configuração de Wi-Fi e DHCP |
+| Home Door | HomeNet | Configuração de Wi-Fi e DHCP |
 
-## Etapas documentadas
+#### Endereçamento de referência
 
-1. **Administração:** acesso à interface web do roteador e preenchimento dos campos de alteração da senha administrativa.
-2. **Rede principal:** definição do SSID HomeNet e habilitação de sua divulgação nas três faixas exibidas.
-3. **Proteção Wi-Fi:** seleção de WPA2 Personal com criptografia AES para as redes principais.
-4. **Rede de convidados:** configuração dos perfis GuestNet com WPA2 Personal/AES e desmarcação da opção que permite acesso à rede local.
-5. **Clientes:** conexão de notebook ao ponto de acesso e configuração da webcam na rede HomeNet.
-6. **Endereçamento:** verificação de DHCP no PC e na webcam.
+| Item | Endereço |
+|---|---|
+| Rede local | `192.168.0.0/24` |
+| Roteador / gateway | `192.168.0.1` |
+| Máscara de rede | `255.255.255.0` |
 
-As etapas representam o que está registrado nas imagens. O roteiro também prevê testes de acesso à Internet, ping entre redes e desativação do gerenciamento remoto, mas não foram fornecidas evidências conclusivas dessas validações.
+![Configuração de DHCP no PC](dhcp-pc.png)
+
+![Conexão Wi-Fi do notebook](conexao-notebook.png)
+
+![Configuração da webcam](webcam-iot.png)
+
+## Passo a passo resumido
+
+1. Acessar o roteador pelo navegador do PC.
+2. Alterar a senha administrativa e desativar o gerenciamento remoto.
+3. Definir o nome **HomeNet** nas redes de 2,4 GHz e 5 GHz.
+4. Aplicar **WPA2 Personal** e **AES** para proteger o Wi-Fi.
+5. Criar a rede **GuestNet** com senha própria.
+6. Impedir que convidados acessem os dispositivos da rede principal.
+7. Conectar os notebooks e dispositivos inteligentes às redes correspondentes.
+8. Conferir os endereços recebidos por DHCP e testar a conexão.
+9. Testar a separação entre GuestNet e HomeNet com o comando `ping`.
 
 ## Fluxograma do processo
 
 ```mermaid
 flowchart TD
-    A[Preparar ambiente no Packet Tracer] --> B[Acessar roteador]
-    B --> C[Revisar senha e gerenciamento]
-    C --> D[Configurar SSID HomeNet]
-    D --> E[Aplicar WPA2 Personal e AES]
-    E --> F[Configurar GuestNet]
-    F --> G[Restringir acesso de convidados a rede local]
-    G --> H[Conectar clientes e dispositivo IoT]
-    H --> I[Verificar DHCP e associacao Wi-Fi]
-    I --> J[Documentar evidencias e pendencias]
+    A[Iniciar laboratorio no Packet Tracer] --> B[Proteger acesso ao roteador]
+    B --> C[Configurar HomeNet]
+    C --> D[Ativar WPA2 Personal e AES]
+    D --> E[Configurar GuestNet]
+    E --> F[Separar convidados da rede principal]
+    F --> G[Conectar notebooks e dispositivos IoT]
+    G --> H[Conferir DHCP e conectividade]
+    H --> I[Testar isolamento entre redes]
+    I --> J[Finalizar atividade]
 ```
 
-## Testes e validações
+## Testes propostos na atividade
 
-| Verificação | Resultado observado | Evidência |
-|---|---|---|
-| SSID HomeNet nas três faixas | Configuração exibida | [SSID HomeNet](assets/evidencias/ssid-homenet.png) |
-| WPA2 Personal e AES | Configuração exibida | [Segurança Wi-Fi](assets/evidencias/seguranca-wifi.png) |
-| Perfil GuestNet | Configuração e opção de acesso local desmarcada | [Rede de convidados](assets/evidencias/rede-convidados.png) |
-| Associação do notebook ao ponto de acesso | Mensagem de sucesso | [Conexão do notebook](assets/evidencias/conexao-notebook.png) |
-| DHCP do PC | IP 192.168.0.100 exibido | [DHCP do PC](assets/evidencias/dhcp-pc.png) |
-| DHCP da webcam | IP 192.168.0.106 exibido | [Webcam IoT](assets/evidencias/webcam-iot.png) |
-| Desativação do gerenciamento remoto | Não comprovada; captura indica habilitado | [Administração](assets/evidencias/administracao-roteador.png) |
-| Acesso ao site de teste | Não verificado nas capturas | Sem evidência |
-| Ping de GuestNet para HomeNet após isolamento | Não verificado nas capturas | Sem evidência |
+| Teste | Para que serve |
+|---|---|
+| Conexão Wi-Fi | Conferir se o dispositivo consegue entrar na rede escolhida |
+| Endereço IP via DHCP | Conferir se o equipamento recebe um endereço automaticamente |
+| Acesso ao site de teste | Conferir a comunicação com a rede externa simulada |
+| `ping` entre redes | Entender se um convidado consegue acessar um dispositivo da rede principal |
+| Novo `ping` após o isolamento | Conferir o bloqueio da comunicação entre as redes |
 
-## Conhecimentos adquiridos
+## O que aprendi
 
-O laboratório ajudou a relacionar **configuração de redes** com **segurança da informação**. WPA2 com AES protege o tráfego sem fio; DHCP simplifica a distribuição de endereços; e uma rede de convidados separada pode limitar o acesso aos dispositivos da rede principal, desde que o isolamento seja aplicado e testado.
+Este laboratório ajudou a entender que a segurança de uma rede começa com configurações simples, como trocar senhas padrão, proteger o Wi-Fi e limitar acessos desnecessários.
 
-Também reforçou a importância de verificar as configurações depois de salvá-las. Uma opção marcada na interface não é, por si só, prova de que todos os testes de segurança foram concluídos.
-
-Esses conceitos são úteis no suporte de TI para investigar falhas de conexão, conferir configurações de rede e identificar exposições desnecessárias.
+Também reforçou a diferença entre a rede principal e a rede de convidados, além da função do DHCP na conexão dos equipamentos. Esses conhecimentos são úteis em **Suporte de TI, Redes e Cybersecurity**, especialmente para configurar redes e investigar problemas de conectividade.
 
 ## Referência
 
-- Cisco Networking Academy (NetAcad), atividade educacional **PT Packet Tracer - Configurar o fortalecimento e a segurança do roteador sem fio** (material disponibilizado no curso).
+- **Cisco Networking Academy (NetAcad):** atividade *PT Packet Tracer - Configurar o fortalecimento e a segurança do roteador sem fio*.
 
-## Observação sobre evidências
-
-As imagens são capturas da execução em ambiente simulado. Antes de tornar o repositório público, oculte as senhas pré-compartilhadas que aparecem em texto claro nas capturas de segurança, convidados e webcam. Não publique o arquivo original da atividade sem confirmar a permissão de redistribuição.
-
+As capturas de tela foram incluídas apenas para ilustrar as etapas do roteiro em um ambiente simulado. As senhas mostradas nas telas pertencem ao exercício educacional.
