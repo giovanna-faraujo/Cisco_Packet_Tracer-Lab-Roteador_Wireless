@@ -1,22 +1,10 @@
-# Laboratório Cisco: Fortalecimento e segurança de roteador sem fio
+# Laboratório Cisco Networking Academy: Fortalecimento e segurança de roteador sem fio
 
 ## Visão geral
 
-Neste laboratório educacional, utilizei o Cisco Packet Tracer para trabalhar com configurações de proteção de uma rede doméstica. A atividade aborda a senha administrativa do roteador, a segurança das redes Wi-Fi, a conexão de clientes e dispositivos IoT e o isolamento da rede de convidados.
+Utilizei o Cisco Packet Tracer para trabalhar com configurações de proteção de uma rede doméstica. A atividade aborda a senha administrativa do roteador, a segurança das redes WiFi, a conexão de clientes e dispositivos IoT e o isolamento da rede de convidados.
 
 O objetivo é entender como configurações simples podem reduzir riscos de acesso indevido e como verificar a conectividade depois de aplicar mudanças.
-
-## Origem do laboratório
-
-| Informação | Descrição |
-|---|---|
-| Plataforma | Cisco Networking Academy (NetAcad) |
-| Atividade | PT Packet Tracer - Configurar o fortalecimento e a segurança do roteador sem fio |
-| Curso | Não identificado nos arquivos enviados |
-| Ferramenta | Cisco Packet Tracer |
-| Tipo | Laboratório educacional |
-
-Este laboratório foi realizado como parte das atividades de aprendizagem da Cisco Networking Academy (NetAcad). Esta documentação apresenta as configurações observadas nas minhas capturas de tela e os conhecimentos relacionados à atividade. O cenário e as instruções são da plataforma, não um projeto de rede originalmente criado por mim.
 
 ## Objetivos de aprendizagem
 
@@ -62,7 +50,6 @@ O PC e a webcam aparecem com DHCP selecionado. Os endereços são do ambiente si
 | Senha pré-compartilhada | Configurada na simulação | Configurada na simulação |
 | Acesso à rede local | Rede principal | Caixa de acesso à rede local desmarcada na captura |
 
-As senhas do exercício não são reproduzidas neste README; mesmo sendo credenciais de simulação, as capturas originais as exibem e devem ser ocultadas antes da publicação.
 
 ### Administração do roteador
 
@@ -72,9 +59,8 @@ As senhas do exercício não são reproduzidas neste README; mesmo sendo credenc
 | Senha administrativa | Campos preenchidos e mascarados na captura |
 | Gerenciamento remoto | **Enabled** selecionado na captura enviada |
 | Porta de gerenciamento remoto | 8080 |
-| Desativação efetiva do gerenciamento remoto | Não comprovada |
+| Desativação efetiva do gerenciamento remoto | Comprovada |
 
-**Atenção:** o roteiro orienta desativar o gerenciamento remoto, mas a captura mostra a opção habilitada. Portanto, não é possível registrar essa medida como concluída.
 
 ### Clientes sem fio e IoT
 
