@@ -1,4 +1,4 @@
-# Laboratório da **Cisco Networking Academy: Segurança de roteador Wi-Fi com Cisco Packet Tracer
+# Laboratório da Cisco Networking Academy: Segurança de roteador Wi-Fi com Cisco Packet Tracer
 
 ## Sobre o laboratório
 
