@@ -1,4 +1,4 @@
-# Laboratório Cisco Networking Academy: Segurança de roteador WiFi
+# Laboratório Cisco Networking Academy: Segurança de roteador Wireless 
 
 ## Sobre o laboratório
 
@@ -29,7 +29,7 @@ As capturas de tela foram incluídas apenas para ilustrar as etapas em um ambien
 | Plataforma | Cisco Networking Academy (NetAcad) |
 | Simulador | Cisco Packet Tracer |
 | Equipamento central | Roteador sem fio doméstico |
-| Redes Wi-Fi | HomeNet (principal) e GuestNet (convidados) |
+| Redes Wireless | HomeNet (principal) e GuestNet (convidados) |
 | Dispositivos do exercício | PC, notebooks, webcam, sirene e porta inteligente |
 | Conexão externa | ISP/Telco e Data Center no cenário do curso |
 
@@ -63,7 +63,7 @@ A rede principal foi usada para estudar a configuração do nome da rede (SSID) 
 | Segurança | WPA2 Personal |
 | Criptografia | AES |
 
-**SSID** é o nome que aparece na lista de redes Wi-Fi. **WPA2 Personal** é o tipo de proteção usado na conexão, e **AES** é o método que ajuda a proteger os dados transmitidos.
+**SSID** é o nome que aparece na lista de redes Wireless. **WPA2 Personal** é o tipo de proteção usado na conexão, e **AES** é o método que ajuda a proteger os dados transmitidos.
 
 ![Configuração do nome da rede](ssid-homenet.png)
 
@@ -149,7 +149,7 @@ flowchart TD
 
 | Teste | Para que serve |
 |---|---|
-| Conexão WiFi | Conferir se o dispositivo consegue entrar na rede escolhida |
+| Conexão Wireless | Conferir se o dispositivo consegue entrar na rede escolhida |
 | Endereço IP via DHCP | Conferir se o equipamento recebe um endereço automaticamente |
 | Acesso ao site de teste | Conferir a comunicação com a rede externa simulada |
 | `ping` entre redes | Entender se um convidado consegue acessar um dispositivo da rede principal |
@@ -159,6 +159,6 @@ flowchart TD
 
 ## O que aprendi
 
-Este laboratório ajudou a entender que a segurança de uma rede começa com configurações simples, como trocar senhas padrão, proteger o W-Fi e limitar acessos desnecessários.
+Este laboratório ajudou a entender que a segurança de uma rede começa com configurações simples, como trocar senhas padrão, proteger o Wireless e limitar acessos desnecessários.
 
 Também reforçou a diferença entre a rede principal e a rede de convidados, além da função do DHCP na conexão dos equipamentos. Esses conhecimentos são úteis em **Suporte de TI, Redes e Cybersecurity**, especialmente para configurar redes e investigar problemas de conectividade.
