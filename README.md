@@ -2,7 +2,7 @@
 
 ## Visão geral
 
-Neste laboratório da **Cisco Networking Academy (NetAcad)**, utilizei o **Cisco Packet Tracer** para estudar como proteger um roteador doméstico, configurar uma rede principal e outra para convidados e conectar computadores e dispositivos inteligentes.
+Neste laboratório da Cisco Networking Academy, utilizei o **Cisco Packet Tracer** para estudar como proteger um roteador doméstico, configurar uma rede principal e outra para convidados e conectar computadores e dispositivos inteligentes.
 
 A atividade também aborda como verificar a conectividade e restringir o acesso dos convidados à rede principal. As capturas de tela ilustram o ambiente simulado; as senhas exibidas pertencem ao exercício.
 
