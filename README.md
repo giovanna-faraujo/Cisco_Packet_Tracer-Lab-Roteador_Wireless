@@ -6,7 +6,7 @@ Neste laboratório da Cisco Networking Academy, utilizei o **Cisco Packet Tracer
 
 A atividade também aborda como verificar a conectividade e restringir o acesso dos convidados à rede principal. As capturas de tela ilustram o ambiente simulado; as senhas exibidas pertencem ao exercício.
 
-![Cenário doméstico do laboratório](ambiente-domestico.png)
+<img width="1536" height="1024" alt="Mapa Mental_ Segurança de Roteador Wireless" src="https://github.com/user-attachments/assets/42ce1dd8-897f-41e0-9417-da8d931d70c3" />
 
 ---
 
@@ -18,7 +18,7 @@ A atividade também aborda como verificar a conectividade e restringir o acesso 
 - Conectar computadores e dispositivos inteligentes utilizando Wireless e DHCP.
 - Verificar a conectividade e o isolamento da rede de convidados.
   
-<img width="557" height="385" alt="Topologia" src="https://github.com/user-attachments/assets/a186a9ea-028e-400e-a2d8-2137ae2bfb56" />
+![Cenário doméstico do laboratório](ambiente-domestico.png)
 
 ---
 
